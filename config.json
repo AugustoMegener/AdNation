@@ -2,5 +2,10 @@
   "site_title": "AdNation - <Your Name>",
   "title": "<Your (Project) Name>",
   "image": "image.png",
-  "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet atque autem blanditiis cupiditate dolorum, ducimus ea exercitationem molestiae natus obcaecati provident quasi quia sed sit ut veniam, voluptatem."
+  "about": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet atque autem blanditiis cupiditate dolorum, ducimus ea exercitationem molestiae natus obcaecati provident quasi quia sed sit ut veniam, voluptatem.",
+  "social_media": [
+    { "icon": "icons/twitter.jpeg", "name": "Twitter", "link": "https://twitter.com" },    
+    { "icon": "icons/discord.jpeg", "name": "Discord", "link": "https://discord.com" }, 
+    { "icon": "icons/modrinth.png", "name": "Modrinth", "link": "https://modrinth.com" }
+  ]
 }

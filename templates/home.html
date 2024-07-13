@@ -8,19 +8,39 @@
 </head>
 <body>
     <header>
-        <img src="{{ url_for('static', filename='image.png') }}" alt="Image">
-        <div id="about">
-            <h1>{{ title }}</h1>
-             <p>{{ about }}</p>
+        <div id="img-box">
+            <img src="{{ url_for('static', filename='image.png') }}" alt="Image">
         </div>
+        <div id="about">
+            <aside>
+                <h1>{{ title }}</h1>
+                 <p>{{ about }}</p>
+            </aside>
+            <nav>
+                <h2>Links:</h2>
+                {% for link in social_media %}
+                    <a href="{{ link.link }}" target="_blank">
+                        <img src="{{ url_for('static', filename=link.icon) }}" alt="{{ link.name }} Icon" width="20" height="20">
+                        {{ link.name }}
+                    </a>
+                {% endfor %}
+            </nav>
+        </div>
+        <form>
+            <button>AdNate</button>
+        </form>
     </header>
     <main>
-        <div id="content"></div>
+        <div id="content">{{ content }}</div>
     </main>
+
+    <footer>
+        aaaaaa
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        document.getElementById('content').innerHTML = marked.parse('{{ content }}')
+        document.getElementById('content').innerHTML = marked.parse(document.getElementById('content').innerHTML)
     </script>
 </body>
 </html>
