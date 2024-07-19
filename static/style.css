@@ -17,6 +17,7 @@ header {
     display: grid;
     margin: 10px;
     margin-bottom: 10px;
+    margin: auto;
     padding: 3px;
 
     border-style: solid;
@@ -26,13 +27,14 @@ header {
 
     position: fixed;
     top: 0;
+    
 
     grid-template-rows: auto 1fr; 
     grid-template-columns: auto 1fr; 
 }
 
 header + main {
-    padding-top: 25vh;
+    padding-top: 40vh;
 }
 
 
@@ -52,6 +54,8 @@ header + main {
 #about {
     grid-row: 1 / span 1; 
     grid-column: 2 / span 1; 
+    display: grid;
+    grid-template-rows: 1fr auto; 
 }
 
 img-box>img {
@@ -78,9 +82,7 @@ img-box>img {
     display: flex;
 }
 
-aside {
-    width: max-content;
-}
+
 
 nav {
     background-color: gainsboro;
@@ -88,6 +90,7 @@ nav {
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
+    height: fit-content;
 }
 
 nav > h2 {
@@ -120,16 +123,14 @@ a > img {
 }
 
 header > form {
-    display: grid;
+    display: flex;
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
-
-    grid-row: 2 / span 1; 
-    grid-column: 1 / span 2; 
 }
 
 header > form > button {
+    display: inline;
     background-color: white;
     size: 5em;
     font-weight: bold;
@@ -146,6 +147,14 @@ header > form > button {
 
 header > form > button:hover {
     background-color: gainsboro;
+}
+
+header > form > input {
+    display: inline;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    
 }
 
 main {
@@ -167,17 +176,11 @@ main {
 }
 
 @media (max-width: 965px) {
-    #about>h1 {
-        font-size: 1.7rem;
+    #about > aside > h1 {
+        font-size: 1rem;
     }
 
-    #img-box {
-        width: 25%;
-    }
-
-    #about {
-        width: 75%;
-    }
+    
 }
 
 @media (max-width: 951px) {
@@ -201,12 +204,10 @@ main {
 }
 
 @media (max-width: 732px) {
-    #img-box {
-        width: 30%;
-    }
+   
 
-    #about {
-        width: 70%;
+    #about > aside > p {
+        font-size: 0.75rem;
     }
 }
 
