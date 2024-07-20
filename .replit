@@ -1,0 +1,9 @@
+run = "python init.py"
+modules = ["python-3.10"]
+
+[deployment]
+run = ["sh", "-c", "python init.py"]
+
+[[ports]]
+localPort = 8080
+externalPort = 80

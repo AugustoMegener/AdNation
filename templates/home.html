@@ -26,9 +26,14 @@
                 {% endfor %}
             </nav>
         </div>
-        <form>
-            <button id="ad-button">AdNate</button>
-            <button id="ad-button">AdNate</button>
+        <form id="form">
+            <button id="plus" type="button">➕</button>
+            <div id="ad-amount">
+                <span id="ad-amount-content">1</span> 
+                <span id="ad-amount-label"> Ads</span>
+            </div>
+            <button id="sub" type="button">➖</button>
+            <button id="ad-button" type="button">💖 AdNate</button>
         </form>
     </header>
     <main>
@@ -39,9 +44,8 @@
         aaaaaa
     </footer>
 
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        document.getElementById('content').innerHTML = marked.parse(document.getElementById('content').innerHTML)
-    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

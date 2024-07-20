@@ -70,3 +70,5 @@ helloWorld();
 ## Conclusão
 
 Markdown é uma ferramenta versátil para escrever e formatar documentos de maneira rápida e eficiente. Espero que este exemplo tenha sido útil para entender suas capacidades básicas.
+
+❤😊😂🙌😍🤣
