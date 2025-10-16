@@ -61,14 +61,13 @@ helloWorld();
 
 ### Tabelas
 
-| Nome       | Idade | Cidade      |
-|------------|-------|-------------|
-| João       | 25    | São Paulo   |
-| Maria      | 30    | Rio de Janeiro |
-| Carlos     | 28    | Belo Horizonte |
+| Nome   | Idade | Cidade         |
+|--------|-------|----------------|
+| João   | 25    | São Paulo      |
+| Maria  | 30    | Rio de Janeiro |
+| Carlos | 28    | Belo Horizonte |
 
 ## Conclusão
 
 Markdown é uma ferramenta versátil para escrever e formatar documentos de maneira rápida e eficiente. Espero que este exemplo tenha sido útil para entender suas capacidades básicas.
 
-❤😊😂🙌😍🤣

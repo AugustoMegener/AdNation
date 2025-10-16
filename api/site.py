@@ -1,4 +1,4 @@
-from api.data import getData
+from api.data import get_data
 from flask import Flask, render_template
 
 site = Flask('AdNation')
@@ -6,7 +6,7 @@ site = Flask('AdNation')
 
 @site.route('/')
 def home():
-    return render_template('home.html', **getData())
+    return render_template('home.html', **get_data())
 
 
 def run(): 
